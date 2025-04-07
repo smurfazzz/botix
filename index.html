@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BO-TIX</title>
+  <title>BO-TIX | Automatizuokime kartu</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #0d0d0d;
       color: #ffffff;
-      line-height: 1.6;
     }
 
-    header {
+    header, section, footer {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero {
       text-align: center;
-      padding: 80px 20px 40px;
+      padding-top: 100px;
     }
 
-    header h1 {
+    .hero h1 {
       font-size: 3em;
-      margin: 0;
       color: #00ffd0;
     }
 
-    header p {
+    .hero p {
       font-size: 1.2em;
       color: #cccccc;
     }
@@ -45,18 +49,24 @@
       background-color: #00c2a8;
     }
 
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
     }
 
-    h2 {
+    .grid-box {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .grid-box h3 {
       color: #00ffd0;
     }
 
-    form input,
-    form textarea {
+    form input, form textarea {
       width: 100%;
       padding: 12px;
       margin-top: 8px;
@@ -81,33 +91,42 @@
 
     footer {
       text-align: center;
-      padding: 20px;
       font-size: 0.9em;
       color: #555;
     }
   </style>
 </head>
 <body>
-
-  <header>
+  <header class="hero">
     <h1>BO-TIX</h1>
-    <p>Automate smarter. Work faster.</p>
-    <a href="#contact" class="btn">Susisiek</a>
+    <p>Automatizuokite verslo procesus greičiau nei įsivaizduojate</p>
+    <a href="#contact" class="btn">Susisiekite</a>
   </header>
 
   <section>
-    <h2>Kas yra BO-TIX?</h2>
-    <p>
-      BO-TIX – tai išmanusis RPA (Robotic Process Automation) sprendimų partneris, padedantis įmonėms automatizuoti pasikartojančias užduotis, mažinti klaidas ir taupyti laiką.  
-      <br><br>
-      Naudodami pažangius Power Automate, Python ir kitus RPA įrankius, kuriame efektyvias, saugias ir paprastas sistemas, kurios dirba 24/7.
-    </p>
+    <h2>Atraskite galimybes</h2>
+    <div class="grid">
+      <div class="grid-box"><h3>Produktyvumas</h3><p>Daugiau nuveikta per trumpesnį laiką.</p></div>
+      <div class="grid-box"><h3>Kaštų mažinimas</h3><p>Robotai neklysta ir dirba be pertraukų.</p></div>
+      <div class="grid-box"><h3>Tikslumas</h3><p>Visi duomenys tvarkomi tiksliai pagal taisykles.</p></div>
+      <div class="grid-box"><h3>Darbuotojų pasitenkinimas</h3><p>Rutininiai darbai perduodami robotams.</p></div>
+      <div class="grid-box"><h3>Klientų aptarnavimas</h3><p>Greitesnis reagavimas, mažiau klaidų.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Kaip dirbame</h2>
+    <ol>
+      <li>Nemokama konsultacija ir poreikių analizė</li>
+      <li>Sprendimo sukūrimas ir testavimas</li>
+      <li>Integracija ir palaikymas</li>
+    </ol>
   </section>
 
   <section id="contact">
-    <h2>Susisiek su mumis</h2>
+    <h2>Kontaktai</h2>
     <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <input type="text" name="name" placeholder="Tavo vardas" required />
+      <input type="text" name="name" placeholder="Vardas" required />
       <input type="email" name="email" placeholder="El. paštas" required />
       <textarea name="message" rows="5" placeholder="Žinutė" required></textarea>
       <button type="submit">Siųsti</button>
@@ -115,8 +134,7 @@
   </section>
 
   <footer>
-    &copy; 2025 BO-TIX. Visos teisės saugomos.
+    &copy; 2025 BO-TIX. Visi robotai dirba Jums.
   </footer>
-
 </body>
 </html>
