@@ -1,11 +1,122 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>BO-TIX</title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BO-TIX</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #00ffd0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #cccccc;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #00ffd0;
+      color: #000;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #00c2a8;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #00ffd0;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    form button {
+      background-color: #00ffd0;
+      border: none;
+      color: #000;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
+    form button:hover {
+      background-color: #00c2a8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
     <h1>BO-TIX</h1>
-    <p>Welcome to the future of automation.</p>
-  </body>
+    <p>Automate smarter. Work faster.</p>
+    <a href="#contact" class="btn">Susisiek</a>
+  </header>
+
+  <section>
+    <h2>Kas yra BO-TIX?</h2>
+    <p>
+      BO-TIX – tai išmanusis RPA (Robotic Process Automation) sprendimų partneris, padedantis įmonėms automatizuoti pasikartojančias užduotis, mažinti klaidas ir taupyti laiką.  
+      <br><br>
+      Naudodami pažangius Power Automate, Python ir kitus RPA įrankius, kuriame efektyvias, saugias ir paprastas sistemas, kurios dirba 24/7.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Susisiek su mumis</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Tavo vardas" required />
+      <input type="email" name="email" placeholder="El. paštas" required />
+      <textarea name="message" rows="5" placeholder="Žinutė" required></textarea>
+      <button type="submit">Siųsti</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 BO-TIX. Visos teisės saugomos.
+  </footer>
+
+</body>
 </html>
