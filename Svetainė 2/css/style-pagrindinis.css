@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  background-image: url(../backgrounds/background5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #000a1f;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+  color: #ffffff;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+header .logo-text {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #00ffd0;
+}
+header nav a {
+  margin-left: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #00ffd0;
+}
+/* h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+  color: #00ffd0;
+} */
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+/* Dideliems ekranams (default) */
+.logo-wrapper {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  max-width: 400px;
+}
+
+.logo-container {
+  text-align: left;
+}
+
+.logo-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #00ffd0;
+  margin-top: 10px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .logo-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-container {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .logo-title {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+.menu-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 100%;
+  padding: 40px 40px 40px 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.menu-container {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 1 / 1;
+  min-height: 700px; /* <-- Pridedame aiškų aukštį */
+  /* background-color: rgba(241, 230, 230, 0.623); */
+  /* background-color: rgba(241, 230, 230, 0.05); testavimui*/
+  margin: 0;
+}
+
+.menu-circle {
+  width: 18vw;
+  max-width: 130px;
+  min-width: 80px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.menu-circle img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.menu-circle p {
+  margin-top: 0px;
+  font-size: 0.9em;
+  color: #00ffd0;
+}
+
+.menu-circle .icon-animated {
+  display: none;
+}
+
+.menu-circle:hover .icon-static {
+  display: none;
+}
+
+.menu-circle:hover .icon-animated {
+  display: block;
+}
+
+/* Rutuliukų pozicijos ratu */
+.ai          { top: 15%;  left: 50%; transform: translate(-50%, -50%); }
+.api         { top: 30%;  left: 80%; transform: translate(-50%, -50%); }
+.automation  { top: 50%;  left: 50%; transform: translate(-50%, -50%); }
+.security    { top: 85%;  left: 70%; transform: translate(-50%, -50%); }
+.robotic     { top: 85%;  left: 30%; transform: translate(-50%, -50%); }
+.process     { top: 60%;  left: 10%; transform: translate(-50%, -50%); }
+.integration { top: 30%;  left: 20%; transform: translate(-50%, -50%); }
+.monitoring  { top: 60%;  left: 90%; transform: translate(-50%, -50%); }
+
+/* Unikalūs hover efektai */
+.ai:hover          { transform: translate(-50%, -70%); }
+.api:hover         { transform: translate(-40%, -70%) scale(1.1); }
+.automation:hover  { transform: translate(-50%, -50%) scale(2); }
+.security:hover    { transform: translate(-30%, -30%) scale(1.1); }
+.robotic:hover     { transform: translate(-70%, -30%) scale(1.1); }
+.process:hover     { transform: translate(-70%, -50%) scale(1.1); }
+.integration:hover { transform: translate(-60%, -70%) scale(1.1); }
+.monitoring:hover  { transform: translate(-30%, -50%) scale(1.1); }
+
+@media (max-width: 768px) {
+  .menu-wrapper {
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .menu-container {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+
+  .menu-circle {
+    position: static;
+    transform: none !important;
+  }
+
+  .menu-circle p {
+    font-size: 0.8em;
+  }
+}
