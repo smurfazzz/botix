@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BO-TIX | Sprendimai</title>
+  <link rel="stylesheet" href="css/style-ai.css"> <!-- arba style-pagrindinis.css -->
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="logo be fono.png" alt="BO-TIX logotipas" style="height: 40px;">
+    </a>
+    <nav>
+      <a href="apie.html">Apie</a>
+      <a href="sprendimai.html">Sprendimai</a>
+      <a href="kontaktai.html">Kontaktai</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>BO-TIX sprendimai</h1>
+
+    <p>
+      BO-TIX siūlo išmanius sprendimus verslui, kurie automatizuoja pasikartojančias užduotis, mažina klaidų tikimybę ir
+      spartina veiklos procesus.
+    </p>
+
+    <p>
+      Mūsų sprendimai apima:
+    <ul>
+      <li><strong>Robotinių procesų automatizavimą (RPA)</strong> – pasikartojančių užduočių vykdymas be žmogaus
+        įsikišimo arba su daliniu žmogaus įsikišimu</li>
+      <li><strong>Dirbtinį intelektą (AI)</strong> – prognozavimas, klasifikavimas, analizė</li>
+      <li><strong>Integracijas</strong> su sistemomis per API ar duomenų mainus</li>
+      <li><strong>Saugumo užtikrinimą</strong> – prieigos valdymas, auditas</li>
+      <li><strong>Stebėseną</strong> – procesų eiga, klaidų stebėjimas, veiklos analizė</li>
+    </ul>
+    </p>
+
+    <p>
+      Sprendimus galima pritaikyti bet kuriai veiklos sričiai – nuo mažų įmonių iki didelių organizacijų, nes kiekvienas
+      robotas BO-TIX sistemoje kuriamas moduliškai.
+    </p>
+
+    <a class="back" href="index.html">← Grįžti į meniu</a>
+  </div>
+  <div class="container">
+    <h1>BO-TIX atlikti darbai</h1>
+    <!-- <p>RPA robotai sprendžia šiuos procesus:</p> -->
+
+    <div class="solutions-grid">
+      <!-- Pirma kortelė -->
+      <div class="solution-card">
+        <h3>Hostinger elektroninės parduotuvės automatizavimas<br><span>Užsakymų valdymas</span>
+        </h3>
+        <p>Išmanusis robotas automatiškai apdoroja gautus užsakymus:
+          parsisiunčia CSV failus, suformuoja siuntimo lipdukus per LP EXPRESS API</p>
+        <a onclick="openModal('modal1')">Daugiau →</a>
+      </div>
+      <!-- Modal -->
+      <div id="modal1" class="modal">
+        <span class="modal-close" onclick="closeModal('modal1')">✖</span>
+        <h2>Hostinger elektroninės parduotuvės automatizavimas</h2>
+        <p>Šis išmanusis BO-TIX sprendimas automatizuoja visą elektroninės parduotuvės užsakymų administravimo procesą.
+          Robotizuotas modulis savarankiškai prisijungia prie el. parduotuvės administravimo aplinkos, automatiškai
+          parsisiunčia gautus užsakymus CSV formatu ir pradeda jų apdorojimą be žmogaus įsikišimo.
+
+          Sistema generuoja siuntimo lipdukus per integruotus kurjerių tiekėjų API – LP EXPRESS, DPD Pickup, OMNIVA ir
+          kitus. Pagal poreikį robotas gali filtruoti užsakymus pagal siuntimo būdą, prioritetą ar kitus pasirinktus
+          kriterijus, todėl yra itin lankstus skirtingų parduotuvių procesams.
+
+          Kiekvienam užsakymui automatiškai priskiriamas siuntos numeris, kuris grąžinamas klientui el. paštu arba per
+          pasirinktą komunikacijos kanalą. Tuo pačiu metu robotas atspausdina užsakymo kvitą, kuris tampa pagrindiniu
+          dokumentu prekių surinkimui.
+
+          Viskas, ką belieka atlikti pardavėjui – pagal kvitą surinkti prekes ir perduoti siuntą paštomatui. Šis
+          sprendimas eliminuoja rankinius administravimo darbus, sumažina klaidų tikimybę ir leidžia sutaupyti
+          reikšmingą kiekį laiko, kuris anksčiau būdavo skiriamas techniniam užsakymų valdymui. Tai ypač naudinga
+          verslams, kurių užsakymų kiekis yra didelis arba sparčiai augantis.</p>
+      </div>
+      <!-- Antra kortelė -->
+      <div class="solution-card">
+        <h3>Hostinger/Zyro restorano užsakymų valdymas<br><span>Užsakymų valdymas</span></h3>
+        <p>BO-TIX išmanusis robotas skirtas restoranams, turintiems elektroninę parduotuvę Hostinger/Zyro platformoje.
+          Robotas veikia visiškai automatiškai ir sujungia el. prekybos kanalą su realiu restorano veiklos valdymu be
+          jokių papildomų licencijų ar specialios įrangos.</p>
+        <a onclick="openModal('modal2')">Daugiau →</a>
+      </div>
+      <!-- Modal -->
+      <div id="modal2" class="modal">
+        <span class="modal-close" onclick="closeModal('modal2')">✖</span>
+        <h2>Restorano el. parduotuvės užsakymų valdymo robotas su POS integracija </h2>
+        <p>
+          BO-TIX išmanusis robotas skirtas restoranams, turintiems elektroninę parduotuvę Hostinger/Zyro platformoje.
+          Robotas veikia visiškai automatiškai ir sujungia el. prekybos kanalą su realiu restorano veiklos valdymu be
+          jokių papildomų licencijų ar specialios įrangos.
+
+          Sistema stebi restorano el. paštą – vos gavus naują užsakymą, robotas jį automatiškai apdoroja, interpretuoja
+          ir siunčia į restorano POS terminalą per Python skriptą. Užsakymo duomenys išskaidomi ir nusiunčiami į
+          interaktyvią Google Sheets lentelę, veikiančią realiu laiku, kurioje barmenas arba virtuvės šefas mato visus
+          aktyvius užsakymus.
+
+          Google Sheets tampa užsakymų valdymo centru:
+          Galima realiuoju laiku redaguoti užsakymo būseną (pvz., „priimtas“, „ruošiamas“, „paruoštas“, „atiduotas“),
+          kiekvienas užsakymo žingsnis automatiškai atsinaujina kliento pusėje,
+          klientas gauna SMS žinutę su atnaujinta būsena kiekviename etape iki pat užsakymo atsiėmimo.
+
+          Pats geriausias sprendimas organizuoti maisto išvežimo paslaugą.
+          Visa sistema veikia be prenumeratų, trečiųjų
+          šalių sistemų ar papildomos techninės įrangos, nebent klientas
+          pageidauja pilnai atskiro roboto veikimo kitame įrenginyje (pvz., planšetėje ar kitame kompiuteryje).
+          Sprendimas idealiai tinka mažiems ir vidutinio dydžio restoranams, kurie nori automatizuoti užsakymų priėmimą,
+          mažinti klaidų skaičių ir užtikrinti sklandų informacijos srautą tarp kliento, virtuvės ir POS terminalo
+          nepermokant už brangių internetinių svetainių palaikymą.
+
+          Tai – tikras realaus laiko užsakymų koordinatorius, pakeičiantis žmogaus pastangas ir užtikrinantis greitą,
+          tikslų ir profesionalų klientų aptarnavimą.
+
+        </p>
+      </div>
+      <!-- Trečia kortelė -->
+      <div class="solution-card">
+        <h3>Elektroninių sąskaitų išrašymo ir spausdinimo robotas (savitarnos terminalams)<br><span>Buhalterija</span>
+        </h3>
+        <p>Šis BO-TIX sprendimas skirtas automatizuoti sąskaitų faktūrų generavimą iš popierinių kvitų, gaunamų iš
+          tokių prekybos vietų kaip LIDL, MAXIMA, SENUKAI ir kitos.</p>
+        <a onclick="openModal('modal3')">Daugiau →</a>
+      </div>
+      <!-- Modal -->
+      <div id="modal3" class="modal">
+        <span class="modal-close" onclick="closeModal('modal3')">✖</span>
+        <h2>Elektroninių sąskaitų išrašymo ir spausdinimo robotas</h2>
+        <p>
+          Šis BO-TIX sprendimas skirtas automatizuoti sąskaitų faktūrų generavimą iš elektroninių kvitų, gaunamų iš
+          savitarnos sistemų tokiose prekybos vietose kaip LIDL, MAXIMA, SENUKAI ir kitos.
+
+          Sistema veikia pusiau automatiškai: naudotojas pateikia kvitų duomenis per roboto valdymo langą (Display),
+          įvesdamas informaciją apie pirkimo datas, čekio numerius ir pirkimo vietas. Robotas automatiškai suformuoja
+          užklausų sąrašą ir pagal kiekvieną įrašą prisijungia prie atitinkamos parduotuvės savitarnos sistemos.
+
+          Veikimo eiga:
+
+          Kvito duomenys surenkami ir išrūšiuojami pagal pardavėją bei kvito tipą
+
+          Robotas prisijungia prie savitarnos sistemos (pvz., LIDL e-invoice portalas) ir automatiškai išrašo sąskaitas
+          faktūras
+          Sąskaitos išsaugomos ir/arba iš karto atspausdinamos
+          Kai kuriose sistemose, pvz., MAXIMOS savitarnoje, vis dar reikalingas naudotojo įsikišimas dėl CAPTCHA
+          įvedimo. Sprendimas CAPTCHA automatizavimui šiuo metu vystomas ir testuojamas.
+          Privalumai:
+          automatizuoja monotonišką ir laikui imlų procesą,
+          itin naudingas buhalteriams ar verslui, kuris dažnai perka iš fizinių parduotuvių,
+          dirba su keliais skirtingais tiekėjais vienu metu,
+          mažina žmogaus klaidų tikimybę ir sutaupo laiką.
+          Tai puikus įrankis visiems, kurie reguliariai tvarko kvitus ir sąskaitas faktūras iš fizinių prekybos vietų,
+          ir nori optimizuoti šį procesą – greitai, saugiai ir patogiai.
+        </p>
+      </div>
+      <!-- Ketvirta kortelė -->
+      <div class="solution-card">
+        <h3>Facebook Share automatizavimas<br><span>Pramogos-reklama</span></h3>
+        <p>Šis išmanusis BO-TIX robotas skirtas automatizuotam įrašų dalinimuisi Facebook grupėse, siekiant padidinti
+          organinį pasiekiamumą be jokių reklamos biudžetų.</p>
+        <a onclick="openModal('modal4')">Daugiau →</a>
+      </div>
+      <!-- Modal -->
+      <div id="modal4" class="modal">
+        <span class="modal-close" onclick="closeModal('modal4')">✖</span>
+        <h2>BO-TIX robotas socialinių tinklų reklamai (Facebook Share automatizavimas)</h2>
+        <p>
+          Šis išmanusis BO-TIX robotas skirtas automatizuotam įrašų dalinimuisi Facebook grupėse, siekiant padidinti
+          organinį pasiekiamumą be jokių reklamos biudžetų. Robotas sukurtas taip, kad imituotų žmogaus elgseną, todėl
+          veikia saugiai, nepastebimai ir nepažeisdamas Facebook bendruomenės gairių.
+          Veikimo principas:
+          Vartotojas per Power Automate Desktop (PAD) pateikia užduotį per Display langą, nurodydamas:
+          kuriame mieste dalintis,
+          kuriuo įrašu (postu) iš puslapio dalintis,
+          ir kokią žinutę pridėti prie dalinimosi (tekstą galima iš anksto užfiksuoti)
+          Robotas:
+          Prisijungia prie nurodyto Facebook naudotojo paskyros,
+          apsilanko visų grupių, kuriose naudotojas dalyvauja, sąraše,
+          nuskenuoja grupių pavadinimus ir aprašymus,
+          išfiltruoja tik tas grupes, kurios atitinka parinktą miestą ar temą,
+          užeina į kiekvienos grupės sklaidos kanalą ir pasidalina įrašu pagal pateiktus parametrus.
+          Tarp dalinimų taikomi žmogiški laiko tarpai, užtikrinant autentišką elgseną
+
+          Privalumai:
+          Tikslinis dalinimas pagal geografinį kriterijų (miestą).
+
+          Robotas išvengia žmogiškų klaidų (pvz., įrašo į netinkamą grupę ar pamiršta tekstą).
+
+          Neatpažįstamas kaip botas – veikia lyg žmogus, todėl apeina algoritmų filtrus.
+
+          Leidžia pasiekti plataus masto nemokamą reklamą be jokių Facebook Ads išlaidų.
+
+          Tinka periodiniam ar sezoniniam pasidalinimų paleidimui (pvz. akcijoms, renginiams).
+
+          Šis sprendimas idealiai tinka smulkiam ir vidutiniam verslui, norinčiam būti matomam lokaliose Facebook
+          grupėse ir išnaudoti socialinius tinklus efektyviai, bet be papildomų kaštų ar rizikos. </p>
+      </div>
+      <!-- Penkta kortelė -->
+      <div class="solution-card">
+        <h3>Dviejų etapų šaukimo ir dalyvavimo patvirtinimo robotas<br><span>Personalo valdymas</span></h3>
+        <p>Šis BO-TIX RPA sprendimas sukurtas tam, kad automatizuotų savanorių karių šaukimo ir dalyvavimo patvirtinimo
+          procesą. Jį sudaro du nepriklausomi, bet tarpusavyje integruoti robotai, užtikrinantys pilną šaukimo valdymo
+          ciklą – nuo pirminio informavimo iki pakartotinių kvietimų tikslinėms grupėms.
+
+        </p>
+        <a onclick="openModal('modal5')">Daugiau →</a>
+      </div>
+      <!-- Modal -->
+      <div id="modal5" class="modal">
+        <span class="modal-close" onclick="closeModal('modal5')">✖</span>
+        <h2>Dviejų etapų šaukimo ir dalyvavimo patvirtinimo robotas (PDF + Excel + Google Forms integracija)</h2>
+        <p>
+          Pirmasis robotas – Šaukimo siuntimo modulis
+          Robotas analizuoja pateiktą PDF šaukimo dokumentą, kuriame nurodytos konkrečios šaukimo datos, vietos ir
+          tikslai. Šią informaciją jis sulygina su vidine šauktinių duomenų baze (Excel faile) ir automatiškai
+          identifikuoja, kurie asmenys yra kviečiami.
+          Po analizės robotas:
+          Sugeneruoja individualius el. laiškus, nurodydamas:
+          šaukimo datą, tikslą, kontaktinius duomenis, nuorodą į Google Forms formą, kurioje karys turi patvirtinti arba
+          atmesti dalyvavimą,
+          išsiunčia šiuos laiškus automatizuotai, adresuojant asmeniniu vardu, pagal šauktinio kontaktinius duomenis
+          Surinkti atsakymai Google Forms formoje naudojami kaip pagrindas tolesnei analizei. <br>
+          Antrasis robotas – Pakartotinio šaukimo modulis
+          Kai kurie šauktiniai gali neatsakyti, todėl paleidžiamas antrasis robotas, kuris:
+          Vėl analizuoja tą patį PDF dokumentą, palygina esamus šauktinių duomenis Excel bazėje, prisijungia prie Google
+          Sheets API, kad gautų realaus laiko informaciją apie užpildytas formas, remdamasis šiais duomenimis, robotas
+          automatiškai: identifikuoja tik tuos šauktinius, kurie neatsakė, iš naujo suformuoja individualius priminimo
+          laiškus, išsiunčia pakartotinį šaukimą su tuo pačiu formos kvietimu. <br>
+          Privalumai: <br>
+          visa sistema veikia visiškai automatiškai, be žmogaus įsikišimo, veikimo greitis – visas šaukimo ciklas
+          įvykdomas per mažiau nei 1 minutę, sumažinama žmogiškų klaidų rizika, sukuriama aiški atskaitomybė ir analizė
+          iš Google Sheets formų, sprendimas lengvai adaptuojamas kitoms panašioms situacijoms (pvz., medicininiams patikrinimams, savanorių
+          kvietimams, išankstiniam registravimui)</p>
+      </div>
+<!-- Šešta kortelė -->
+      <div class="solution-card">
+        <h3>GPAIS duomenų pildymas<br><span>Gamyba</span></h3>
+        <p>Automatiškai importuoja duomenis iš apskaitos sistemos į GPAIS.</p>
+        <a onclick="openModal('modal6')">Daugiau →</a>
+      </div>
+      <!-- Modal -->
+      <div id="modal6" class="modal">
+        <span class="modal-close" onclick="closeModal('modal6')">✖</span>
+        <h2>Sodros nedarbingumo patikrinimas</h2>
+        <p>
+          Sistema automatiškai prisijungia prie Sodros, patikrina nedarbingumo pažymas ir importuoja jas į personalo
+          apskaitos sistemą.
+          Sumažina žmogiškųjų klaidų tikimybę ir taupo laiką.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="overlay" onclick="closeAllModals()"></div>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    }
+
+    function closeAllModals() {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(m => m.style.display = 'none');
+      document.getElementById('overlay').style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>
