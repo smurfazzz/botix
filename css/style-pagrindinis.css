@@ -38,6 +38,26 @@ header nav a {
 header nav a:hover {
   color: #00ffd0;
 }
+
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    header nav {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    header nav a {
+      margin-left: 0;
+    }
+  }
+
 /* h1 {
   text-align: center;
   font-size: 2em;
