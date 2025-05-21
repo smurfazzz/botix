@@ -239,7 +239,33 @@
           iš Google Sheets formų, sprendimas lengvai adaptuojamas kitoms panašioms situacijoms (pvz., medicininiams patikrinimams, savanorių
           kvietimams, išankstiniam registravimui)</p>
       </div>
-<!-- Šešta kortelė -->
+      <div class="solution-card">
+        <h3>Optimum buhalterinės programos automatizavimas<br><span>Buhalterija</span></h3>
+        <p>Šis BO-TIX sprendimas automatizuoja PDF sąskaitų faktūrų ir prekių registravimą buhalterinėje sistemoje
+          „Optimum“
+          per SOAP API, eliminavus žmogiškąsias klaidas ir sumažinant rankinio darbo apimtį.</p>
+        <a onclick="openModal('modal6')">Daugiau →</a>
+      </div>
+      <!-- Modal -->
+      <div id="modal6" class="modal">
+        <span class="modal-close" onclick="closeModal('modal6')">✖</span>
+        <h2>Optimum buhalterinės programos automatizavimas</h2>
+        <p>
+          Šis išmanusis BO-TIX sprendimas automatiškai apdoroja gautas sąskaitas faktūras ir suveda informaciją į
+          buhalterinę sistemą „Optimum“, pasitelkdamas SOAP API integraciją. Sprendimas analizuoja PDF dokumentus,
+          išgauna duomenis (naudojant lentelių analizę), sugrupuoja pasikartojančias prekes, paskaičiuoja
+          vidutinę kainą, ir teisingu formatu įkelia duomenis į sistemą.
+          Sistema apdoroja: <br>
+          *Sąskaitų numerius, datas, partnerius <br>
+          *Prekių sąrašus - pavadinimus, kiekius, kainas <br>
+          *Tvarko prekių sujungimą, jei jos pasikartoja (traukia vidutinią kainą) <br>
+          *Automatiškai tikrina, ar prekė egzistuoja sistemoje, jei prekė neegzistuoja – ją sukuria per SOAP API,
+          jei egzistuoja – saugiai praleidžia ir tęsia darbą<br>
+          *Galimybė perduoti lietuviškas raides be kodavimo klaidų <br>
+          *Atnaujinta strategija be GET filtrų – be apmokestinimų
+        </p>
+      </div>
+<!-- Septinta kortelė -->
       <div class="solution-card">
         <h3>GPAIS duomenų pildymas<br><span>Gamyba</span></h3>
         <p>Automatiškai importuoja duomenis iš apskaitos sistemos į GPAIS.</p>
